@@ -1,0 +1,23 @@
+h1,
+h2 {
+  font-family: Lato;
+}
+
+.calc-wrapper {
+  width: 300px;
+  border: 1px solid black;
+}
+
+.output-area > input {
+  width: 100%;
+}
+
+.calc-ops-area {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.math-nums {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
