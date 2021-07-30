@@ -56,19 +56,15 @@ const resetEvent = () => {
   viewOutput.value = 0;
 };
 viewOutput.addEventListener('input', e => {
-  console.log(e.currentTarget.value);
   viewOutput.value = parseInt(e.currentTarget.value)
     ? e.currentTarget.value
     : 0;
-  console.log('check', e.currentTarget.value);
 });
 resetCTA.addEventListener('click', () => {
   resetEvent();
 });
 const numEvent = elm => {
   elm.addEventListener('click', e => {
-    // to be coded
-    console.log(viewOutput.value);
     viewOutput.value = parseInt(viewOutput.value)
       ? viewOutput.value + e.currentTarget.innerText
       : e.currentTarget.innerText;
